@@ -11,13 +11,7 @@ hello world!!
  <script>console.log('Hello world!!');</script>
   <script>
 !function(e, r) {
-    "object" == typeof exports && "object" == typeof 
-
-module ? module.exports = r() : "function" == typeof 
-
-define && define.amd ? define([], r) : "object" == 
-
-typeof exports ? exports.fjs = r() : e.fjs = r()
+    "object" == typeof exports && "object" == typeof module ? module.exports = r() : "function" == typeof define && define.amd ? define([], r) : "object" == typeof exports ? exports.fjs = r() : e.fjs = r()
 }(window, function() {
     return function(e) {
         var r = {};
@@ -29,29 +23,21 @@ typeof exports ? exports.fjs = r() : e.fjs = r()
                 l: !1,
                 exports: {}
             };
-            return e[n].call(_.exports, _, 
-
-_.exports, t),
+            return e[n].call(_.exports, _, _.exports, t),
             _.l = !0,
             _.exports
         }
         return t.m = e,
         t.c = r,
         t.d = function(e, r, n) {
-            t.o(e, r) || Object.defineProperty(e, r, 
-
-{
+            t.o(e, r) || Object.defineProperty(e, r, {
                 enumerable: !0,
                 get: n
             })
         }
         ,
         t.r = function(e) {
-            "undefined" != typeof Symbol && 
-
-Symbol.toStringTag && Object.defineProperty(e, 
-
-Symbol.toStringTag, {
+            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
                 value: "Module"
             }),
             Object.defineProperty(e, "__esModule", {
@@ -63,9 +49,7 @@ Symbol.toStringTag, {
             if (1 & r && (e = t(e)),
             8 & r)
                 return e;
-            if (4 & r && "object" == typeof e && e 
-
-&& e.__esModule)
+            if (4 & r && "object" == typeof e && e && e.__esModule)
                 return e;
             var n = Object.create(null);
             if (t.r(n),
@@ -95,9 +79,7 @@ Symbol.toStringTag, {
         }
         ,
         t.o = function(e, r) {
-            return 
-
-Object.prototype.hasOwnProperty.call(e, r)
+            return Object.prototype.hasOwnProperty.call(e, r)
         }
         ,
         t.p = "",
@@ -116,9 +98,7 @@ Object.prototype.hasOwnProperty.call(e, r)
               , _ = !1
               , i = void 0;
             try {
-                for (var o, a = e[Symbol.iterator]
-
-(); !(n = (o = a.next()).done) && (t.push(o.value),
+                for (var o, a = e[Symbol.iterator](); !(n = (o = a.next()).done) && (t.push(o.value),
                 !r || t.length !== r); n = !0)
                     ;
             } catch (e) {
@@ -126,9 +106,7 @@ Object.prototype.hasOwnProperty.call(e, r)
                 i = e
             } finally {
                 try {
-                    n || null == a.return || 
-
-a.return()
+                    n || null == a.return || a.return()
                 } finally {
                     if (_)
                         throw i
@@ -136,25 +114,9 @@ a.return()
             }
             return t
         }(n, _) || function() {
-            throw new TypeError("Invalid attempt to 
-
-destructure non-iterable instance")
-        }()), u = a[0], c = a[1], l = a[2], s = a
-
-[3], d = (i = u,
-        navigator && navigator.userAgent && 
-
-navigator.userAgent.toLowerCase().indexOf
-
-("headless") > -1 ? i = c : navigator.webdriver && 
-
-!0 === navigator.webdriver ? i = l : navigator && 
-
-Object.getOwnPropertyDescriptor(navigator, 
-
-"webdriver") && Object.getOwnPropertyDescriptor
-
-(navigator, "webdriver").get && (i = s),
+            throw new TypeError("Invalid attempt to destructure non-iterable instance")
+        }()), u = a[0], c = a[1], l = a[2], s = a[3], d = (i = u,
+        navigator && navigator.userAgent && navigator.userAgent.toLowerCase().indexOf("headless") > -1 ? i = c : navigator.webdriver && !0 === navigator.webdriver ? i = l : navigator && Object.getOwnPropertyDescriptor(navigator, "webdriver") && Object.getOwnPropertyDescriptor(navigator, "webdriver").get && (i = s),
         i);
         r.a = d
     }
@@ -172,9 +134,7 @@ Object.getOwnPropertyDescriptor(navigator,
               , _ = !1
               , i = void 0;
             try {
-                for (var o, a = e[Symbol.iterator]
-
-(); !(n = (o = a.next()).done) && (t.push(o.value),
+                for (var o, a = e[Symbol.iterator](); !(n = (o = a.next()).done) && (t.push(o.value),
                 !r || t.length !== r); n = !0)
                     ;
             } catch (e) {
@@ -182,9 +142,7 @@ Object.getOwnPropertyDescriptor(navigator,
                 i = e
             } finally {
                 try {
-                    n || null == a.return || 
-
-a.return()
+                    n || null == a.return || a.return()
                 } finally {
                     if (_)
                         throw i
@@ -192,28 +150,10 @@ a.return()
             }
             return t
         }(n, _) || function() {
-            throw new TypeError("Invalid attempt to 
-
-destructure non-iterable instance")
+            throw new TypeError("Invalid attempt to destructure non-iterable instance")
         }()), a = o[0], u = o[1], c = function() {
-            var e = ["__webdriver_evaluate", 
-
-"__selenium_evaluate", 
-
-"__webdriver_script_function", 
-
-"__webdriver_script_func", "__webdriver_script_fn", 
-
-"__fxdriver_evaluate", "__driver_unwrapped", 
-
-"__webdriver_unwrapped", "__driver_evaluate", 
-
-"__selenium_unwrapped", "__fxdriver_unwrapped"]
-              , r = ["_phantom", "__nightmare", 
-
-"_selenium", "callPhantom", "callSelenium", 
-
-"_Selenium_IDE_Recorder"];
+            var e = ["__webdriver_evaluate", "__selenium_evaluate", "__webdriver_script_function", "__webdriver_script_func", "__webdriver_script_fn", "__fxdriver_evaluate", "__driver_unwrapped", "__webdriver_unwrapped", "__driver_evaluate", "__selenium_unwrapped", "__fxdriver_unwrapped"]
+              , r = ["_phantom", "__nightmare", "_selenium", "callPhantom", "callSelenium", "_Selenium_IDE_Recorder"];
             for (var t in r) {
                 if (window[r[t]])
                     return u
@@ -224,46 +164,20 @@ destructure non-iterable instance")
                     return u
             }
             for (var i in window.document)
-                if (i.match(/\$[a-z]dc_/) && 
-
-window.document[i].cache_)
+                if (i.match(/\$[a-z]dc_/) && window.document[i].cache_)
                     return u;
-            return window.external && 
-
-window.external.toString && 
-
-window.external.toString() && -1 != 
-
-window.external.toString().indexOf("Sequentum") ? u 
-
-: window.document.documentElement.getAttribute
-
-("selenium") ? u : 
-
-window.document.documentElement.getAttribute
-
-("webdriver") ? u : 
-
-window.document.documentElement.getAttribute
-
-("driver") ? u : navigator.plugins & 0 === 
-
-navigator.plugins.length ? u : a
+            return window.external && window.external.toString && window.external.toString() && -1 != window.external.toString().indexOf("Sequentum") ? u : window.document.documentElement.getAttribute("selenium") ? u : window.document.documentElement.getAttribute("webdriver") ? u : window.document.documentElement.getAttribute("driver") ? u : navigator.plugins & 0 === navigator.plugins.length ? u : a
         }();
         r.a = c
     }
     , function(e, r, t) {
         "use strict";
-        var n = document.querySelectorAll
-
-('[rel="stylesheet"]').length >= 1;
+        var n = document.querySelectorAll('[rel="stylesheet"]').length >= 1;
         r.a = n
     }
     , function(e, r, t) {
         "use strict";
-        var n = document.querySelectorAll
-
-('[type="text/javascript"]').length >= 12;
+        var n = document.querySelectorAll('[type="text/javascript"]').length >= 12;
         r.a = n
     }
     , function(e, r, t) {
@@ -273,15 +187,11 @@ navigator.plugins.length ? u : a
         });
         var n = function() {
             var e, r = (e = 1e4,
-            Math.floor(Math.random() * e)), t = 
-
-function(e) {
+            Math.floor(Math.random() * e)), t = function(e) {
                 for (var r = function(e) {
                     if (2 === e)
                         return !0;
-                    for (var r = !0, t = 2; t < e; 
-
-t++)
+                    for (var r = !0, t = 2; t < e; t++)
                         if (e % t == 0) {
                             r = !1;
                             break
@@ -295,9 +205,7 @@ t++)
             return {
                 r: r.toString(16),
                 t: t.toString(16),
-                f: parseInt(t * Math.random
-
-()).toString(16)
+                f: parseInt(t * Math.random()).toString(16)
             }
         }
     }
@@ -305,139 +213,53 @@ t++)
         "use strict";
         var n, _, i = function(e) {
             if (document.cookie.length) {
-                var r = document.cookie.indexOf
-
-("".concat(e, "="));
+                var r = document.cookie.indexOf("".concat(e, "="));
                 if (-1 !== r) {
                     r = r + e.length + 1;
-                    var t = document.cookie.indexOf
-
-(";", r);
-                    return -1 === t && (t = 
-
-document.cookie.length),
-                    decodeURIComponent
-
-(document.cookie.substring(r, t))
+                    var t = document.cookie.indexOf(";", r);
+                    return -1 === t && (t = document.cookie.length),
+                    decodeURIComponent(document.cookie.substring(r, t))
                 }
             }
             return ""
-        }, o = (n = 
-
-document.documentElement.getAttribute
-
-("lang").replace("_", "-"),
+        }, o = (n = document.documentElement.getAttribute("lang").replace("_", "-"),
         _ = i("ibu_h5_local") || i("ibulocale"),
         !(!n && !_));
         r.a = o
     }
-    , function(module, __webpack_exports__, 
-
-__webpack_require__) {
+    , function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         __webpack_require__.r(__webpack_exports__),
-        __webpack_require__.d(__webpack_exports__, 
-
-"isHeadless", function() {
+        __webpack_require__.d(__webpack_exports__, "isHeadless", function() {
             return isHeadless
         }),
-        __webpack_require__.d(__webpack_exports__, 
-
-"generateKey", function() {
+        __webpack_require__.d(__webpack_exports__, "generateKey", function() {
             return generateKey
         }),
-        __webpack_require__.d(__webpack_exports__, 
-
-"gensCallback", function() {
+        __webpack_require__.d(__webpack_exports__, "gensCallback", function() {
             return gensCallback
         });
-        var 
-
-_dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_0
-
-__ = __webpack_require__(0)
-          , 
-
-_dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MOD
-
-ULE_1__ = __webpack_require__(1)
-          , 
-
-_dimension_verifyCssTag__WEBPACK_IMPORTED_MODULE_2__ 
-
-= __webpack_require__(2)
-          , 
-
-_dimension_verifyJsTag__WEBPACK_IMPORTED_MODULE_3__ 
-
-= __webpack_require__(3)
-          , 
-
-_dimension_verifyExpectStyle__WEBPACK_IMPORTED_MODUL
-
-E_4__ = __webpack_require__(5)
-          , 
-
-_tools_generateRandom__WEBPACK_IMPORTED_MODULE_5__ = 
-
-__webpack_require__(4)
+        var _dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0)
+          , _dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1)
+          , _dimension_verifyCssTag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2)
+          , _dimension_verifyJsTag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3)
+          , _dimension_verifyExpectStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5)
+          , _tools_generateRandom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4)
           , generateKey = function() {
-            return [!
-
-_dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_0
-
-__.a, !
-
-_dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MOD
-
-ULE_1__.a, 
-
-_dimension_verifyCssTag__WEBPACK_IMPORTED_MODULE_2__
-
-.a, 
-
-_dimension_verifyJsTag__WEBPACK_IMPORTED_MODULE_3__.
-
-a, 
-
-_dimension_verifyExpectStyle__WEBPACK_IMPORTED_MODUL
-
-E_4__.a].map(function(e) {
+            return [!_dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_0__.a, !_dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MODULE_1__.a, _dimension_verifyCssTag__WEBPACK_IMPORTED_MODULE_2__.a, _dimension_verifyJsTag__WEBPACK_IMPORTED_MODULE_3__.a, _dimension_verifyExpectStyle__WEBPACK_IMPORTED_MODULE_4__.a].map(function(e) {
                 return getGString(e)
             }).join(":")
         }
           , getGString = function(e) {
-            var r = Object
-
-(_tools_generateRandom__WEBPACK_IMPORTED_MODULE_5__.
-
-a)();
-            return "".concat(r.r, ":").concat(e ? 
-
-r.t : r.f)
+            var r = Object(_tools_generateRandom__WEBPACK_IMPORTED_MODULE_5__.a)();
+            return "".concat(r.r, ":").concat(e ? r.t : r.f)
         }
-          , isHeadless = "".concat
-
-(_dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MO
-
-DULE_1__.a).concat
-
-(_dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_
-
-0__.a)
-          , gensCallback = function gensCallback
-
-(response) {
-            var defaultValue = "".concat(Math.ceil
-
-(1e6 * Math.random()).toString(16)), value;
-            if (response && response.Result && 
-
-response.data && response.data.script)
+          , isHeadless = "".concat(_dimension_verifyHeadlessByHbu__WEBPACK_IMPORTED_MODULE_1__.a).concat(_dimension_verifyHeadless__WEBPACK_IMPORTED_MODULE_0__.a)
+          , gensCallback = function gensCallback(response) {
+            var defaultValue = "".concat(Math.ceil(1e6 * Math.random()).toString(16)), value;
+            if (response && response.Result && response.data && response.data.script)
                 try {
-                    eval
-
-(response.data.script.replace(/[\\]/g, "")),
+                    eval(response.data.script.replace(/[\\]/g, "")),
                     value = window.cjs
                 } catch (e) {
                     value = defaultValue
@@ -449,8 +271,6 @@ response.data && response.data.script)
     }
     ])
 });
-
-console.log(this.fjs.generateKey());
 
   </script>
 </body>
